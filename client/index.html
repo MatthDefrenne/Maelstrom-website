@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <title>Bootstrap Angular Application</title>
+  <meta name="fragment" content="!">
+  <base href="/">
+  <!-- inject:css -->
+  <link rel="stylesheet" href="libs/components-font-awesome/css/font-awesome.css">
+  <!-- endinject -->
+</head>
+<body>
+
+<div ui-view></div>
+
+<a ui-sref="landing">State 1</a>
+<a ui-sref="about">State 2</a>
+
+<!-- inject:js -->
+<script src="libs/jquery/dist/jquery.js"></script>
+<script src="libs/angular/angular.js"></script>
+<script src="libs/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="libs/angular-resource/angular-resource.js"></script>
+<!-- endinject -->
+
+<!-- angular:js -->
+<script src="angular/app.js"></script>
+<script src="angular/config.js"></script>
+<script src="angular/routing.js"></script>
+<script src="angular/run.js"></script>
+<script src="app/landing/landingController.js"></script>
+<!-- endinject -->
+
+
+</body>
+</html>
