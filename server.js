@@ -10,7 +10,8 @@ app.use(compression({
     level: 9
 }));
 
-app.use(express.static(path.join(__dirname, 'client'), {maxAge: 86400000}));// jshint ignore:line
+app.use(express.static(path.join(__dirname, 'client'), {maxAge: 86400000}));
+
 app.get('*', function (req, res) {
     var file = __dirname + "/client/index.html";
     res.sendFile(path.resolve(file));
